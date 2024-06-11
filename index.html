@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Playable Piano JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="styles/piano.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <select id="instrumenttype"  onclick="playTune()">
+          <optgroup label="Piano">
+             <!-- drop down for pianos -->
+
+            <option value="LX700 SERIES">LX700 SERIES</option>
+            <option value="yamaha 750">yamaha 750</option>
+          </optgroup>
+          <optgroup label="Guitars">
+            <!-- drop down for acoustic-guitar -->
+            <!-- <option label="acoustic-guitar"> -->
+
+            <option value="Yamaha FSC-TA Ruby Red Trans">Yamaha FSC-TA Ruby Red Trans</option>
+            <option value="Fender Acoustic Guitar CD60SCE">Fender Acoustic Guitar CD60SCE</option>
+             <!-- drop down for electric-guitar -->
+            <!-- <option label="electric-guitar"> -->
+
+            <option value="Casio EG-5 Guitar Synth">Casio EG-5 Guitar Synth</option>
+            <option value="Clean Guitar">Clean Guitar</option>
+            <option value="Ibanez RGKP6-WK">Ibanez RGKP6-WK</option>
+          </optgroup>
+        </select>
+        <audio id="audio" controls></audio> <!--audio id-->
+        <!-- <h2>Playable PIANO</h2> -->
+        <div class="column volume-slider">
+          <span>Volume</span><input type="range" min="0" max="1" value="0.5" step="any">
+        </div>
+        <div class="column keys-checkbox">
+          <span>Show Keys</span><input type="checkbox" checked>
+        </div>
+      </header>
+      <ul class="piano-keys">
+        <li class="key white" data-key="a"><span>a</span></li>
+        <li class="key black" data-key="w"><span>w</span></li>
+        <li class="key white" data-key="s"><span>s</span></li>
+        <li class="key black" data-key="e"><span>e</span></li>
+        <li class="key white" data-key="d"><span>d</span></li>
+        <li class="key white" data-key="f"><span>f</span></li>
+        <li class="key black" data-key="t"><span>t</span></li>
+        <li class="key white" data-key="g"><span>g</span></li>
+        <li class="key black" data-key="y"><span>y</span></li>
+        <li class="key white" data-key="h"><span>h</span></li>
+        <li class="key black" data-key="u"><span>u</span></li>
+        <li class="key white" data-key="j"><span>j</span></li>
+        <li class="key white" data-key="k"><span>k</span></li>
+        <li class="key black" data-key="o"><span>o</span></li>
+        <li class="key white" data-key="l"><span>l</span></li>
+        <li class="key black" data-key="p"><span>p</span></li>
+        <li class="key white" data-key=";"><span>;</span></li>
+      </ul>
+    </div>
+
+  </body>
+</html>
